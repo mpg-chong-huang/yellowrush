@@ -8,10 +8,11 @@ body {
 	color: #ffe392;
 	font-family: "Lato", Helvetica, Arial, "ヒラギノ角ゴシック体 GB W6", Hiragino Sans GB W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 table {
-	padding-top: 80px;
 	margin: auto;
 	width: 30%;
 }
@@ -76,12 +77,15 @@ canvas {
 	cursor: crosshair;
 	display: block;
 	position: absolute;
+	width: 100%;
 }
 	</style>
 </head>
 
 <body>
-<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+<canvas id="canvas"></canvas>
+	
+	<h2 >小黄在此祝愿你</h2>
 	<!-- Table for aligning pinyin and Chinese characters -->
 	<table>
 		<tr>
