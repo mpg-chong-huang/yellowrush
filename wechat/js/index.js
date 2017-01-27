@@ -37,6 +37,7 @@ if(window.DeviceMotionEvent) {
         y = acceleration.y;
         if(Math.abs(x-lastX) > speed || Math.abs(y-lastY) > speed) {
             start();
+            alert('测试成功')；
         }
         lastX = x;
         lastY = y;
