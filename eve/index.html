@@ -23,9 +23,6 @@
             height: 300px;
             display: inline-block;
             overflow: hidden;
-            background: url('./img/animation.png') no-repeat -2px -2px;
-            animation: play 0.8s steps(5) infinite;
-            -webkit-animation: play 0.8s steps(5) infinite;
         }
         
         /* 半透明遮罩层 */
@@ -107,7 +104,11 @@
         .qian img{
             width: 100%;
             animation: s1 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -o-animation:s1 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -moz-animation:s1 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -webkit-animation:s1 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
         }
+
 
 @-webkit-keyframes s1 {
     0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
@@ -123,7 +124,45 @@
     100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-
+@-moz-keyframes s1 {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-o-keyframes s1 {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes s1 {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
 
         @media only screen and (max-height: 480px) {
             /*针对iphone 4s这类小屏幕手机优化签筒大小*/
@@ -144,18 +183,8 @@
         }
 
 
-        /* 摇晃按钮的动画 */
-        @keyframes shake {
-            0% {
-                transform: scaleY(1) translate(30px);
-            }
-            50% {
-                transform: translate(-30px);
-            }
-            100% {
-                transform: scaleY(1) translate(30px);
-            }
-        }
+       
+        
 
         /* 底部摆动按钮的样式 */
         .buttonBox {
@@ -171,14 +200,107 @@
             cursor: pointer;
             /*animation: shake 1.5s steps(5) infinite;*/
             animation: shake 1.2s cubic-bezier(0, 0, 0.36, 1) infinite;
+            -o-animation: shake 1.2s cubic-bezier(0, 0, 0.36, 1) infinite;
+            -moz-animation: shake 1.2s cubic-bezier(0, 0, 0.36, 1) infinite;
+            -webkit-animation: shake 1.2s cubic-bezier(0, 0, 0.36, 1) infinite;
         }
+
+        @keyframes shake {
+            0% {
+                transform: scaleY(1) translate(30px);
+            }
+            50% {
+                transform: translate(-30px);
+            }
+            100% {
+                transform: scaleY(1) translate(30px);
+            }
+        }
+        @-o-keyframes shake {
+            0% {
+                transform: scaleY(1) translate(30px);
+            }
+            50% {
+                transform: translate(-30px);
+            }
+            100% {
+                transform: scaleY(1) translate(30px);
+            }
+        }
+        @-moz-keyframes shake {
+            0% {
+                transform: scaleY(1) translate(30px);
+            }
+            50% {
+                transform: translate(-30px);
+            }
+            100% {
+                transform: scaleY(1) translate(30px);
+            }
+        }
+        @-webkit-keyframes shake {
+            0% {
+                transform: scaleY(1) translate(30px);
+            }
+            50% {
+                transform: translate(-30px);
+            }
+            100% {
+                transform: scaleY(1) translate(30px);
+            }
+        }
+
+         /* 摇晃按钮的动画 */
+
         .result .qian{
             margin-top: 200px; 
             animation: s2 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -o-animation: s2 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -moz-animation: s2 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            -webkit-animation: s2 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
         }
 
 
-        @-webkit-keyframes s2{
+@keyframes s2{
+    0% { -webkit-transform: translate(10px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -14px) rotate(-3deg); }
+    20% { -webkit-transform: translate(-16px, 0px) rotate(3deg); }
+    30% { -webkit-transform: translate(0px, 14px) rotate(0deg); }
+    40% { -webkit-transform: translate(12px, -1px) rotate(3deg); }
+    50% { -webkit-transform: translate(-1px, 14px) rotate(-3deg); }
+    60% { -webkit-transform: translate(-16px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(14px, 1px) rotate(-3deg); }
+    80% { -webkit-transform: translate(-1px, -12px) rotate(3deg); }
+    90% { -webkit-transform: translate(14px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -14px) rotate(-3deg); }
+}
+@-o-keyframes s2{
+    0% { -webkit-transform: translate(10px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -14px) rotate(-3deg); }
+    20% { -webkit-transform: translate(-16px, 0px) rotate(3deg); }
+    30% { -webkit-transform: translate(0px, 14px) rotate(0deg); }
+    40% { -webkit-transform: translate(12px, -1px) rotate(3deg); }
+    50% { -webkit-transform: translate(-1px, 14px) rotate(-3deg); }
+    60% { -webkit-transform: translate(-16px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(14px, 1px) rotate(-3deg); }
+    80% { -webkit-transform: translate(-1px, -12px) rotate(3deg); }
+    90% { -webkit-transform: translate(14px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -14px) rotate(-3deg); }
+}
+@-moz-keyframes s2{
+    0% { -webkit-transform: translate(10px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -14px) rotate(-3deg); }
+    20% { -webkit-transform: translate(-16px, 0px) rotate(3deg); }
+    30% { -webkit-transform: translate(0px, 14px) rotate(0deg); }
+    40% { -webkit-transform: translate(12px, -1px) rotate(3deg); }
+    50% { -webkit-transform: translate(-1px, 14px) rotate(-3deg); }
+    60% { -webkit-transform: translate(-16px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(14px, 1px) rotate(-3deg); }
+    80% { -webkit-transform: translate(-1px, -12px) rotate(3deg); }
+    90% { -webkit-transform: translate(14px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -14px) rotate(-3deg); }
+}
+@-webkit-keyframes s2{
     0% { -webkit-transform: translate(10px, 1px) rotate(0deg); }
     10% { -webkit-transform: translate(-1px, -14px) rotate(-3deg); }
     20% { -webkit-transform: translate(-16px, 0px) rotate(3deg); }
