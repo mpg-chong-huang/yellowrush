@@ -137,7 +137,7 @@ function updateGameArea() {
             myObstacles[i].x += -1;
             myObstacles[i].update();
         }
-        myscore.text="🧧:" + myscore.score + "分";
+        myscore.text="💸:" + myscore.score + "￥";
         myscore.update();
         myGamePiece.x += myGamePiece.speedX;
         myGamePiece.y += myGamePiece.speedY;
