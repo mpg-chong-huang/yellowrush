@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>点击开始录制，暂停跟停止来控制录音结束</h1>
-
+    <h1>简单录音功能</h1>
+    <p>直接通过web页面可以自动调用并产生录音效果，点击录音开始和录音结束等控制录音的操作</p>
     <div id="controls">
   	 <button id="recordButton">开始录音</button>
   	 <button id="pauseButton" disabled>录音中止</button>
-  	 <button id="stopButton" disabled>停止录音</button>
+  	 <button id="stopButton" disabled>录音结束</button>
     </div>
-    <div id="formats">Format</div>
-  	<h3>录音列表</h3>
+    <div id="formats">Format: start recording to see sample rate</div> <span>（音频格式）</span>
+  	<h3 style="margin-top: 30px">录音列表</h3>
   	<ol id="recordingsList"></ol>
 
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
