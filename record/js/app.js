@@ -132,7 +132,7 @@ function createDownloadLink(blob) {
 	//save to disk link
 	link.href = url;
 	link.download = filename+".wav"; //download forces the browser to donwload the file using the  filename
-	link.innerHTML = "Save to disk";
+	link.innerHTML = "保存到本地";
 
 	//add the new audio element to li
 	li.appendChild(au);
@@ -146,7 +146,7 @@ function createDownloadLink(blob) {
 	//upload link
 	var upload = document.createElement('a');
 	upload.href="#";
-	upload.innerHTML = "Upload";
+	upload.innerHTML = "上传至服务器";
 	upload.addEventListener("click", function(event){
 		  var xhr=new XMLHttpRequest();
 		  xhr.onload=function(e) {
