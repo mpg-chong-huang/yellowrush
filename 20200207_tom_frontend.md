@@ -4,6 +4,10 @@ Name：HUANG CHONG（tom）
 
 Age：30
 
+Contact No.：08049582748
+
+Email：huangchon@gmail.com
+
 Technical Keyword：Javascript, PHP, Cordova IOS, UX, Linux, AWS
 
 Hobbies：Game，Animate，Basketball，Joggles，Travel，
