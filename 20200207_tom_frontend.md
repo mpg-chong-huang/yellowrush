@@ -127,7 +127,7 @@ Projects & Personal Works
 >
 > [+ IOS] · [+ Android]
 >
-> Responsibility：Angular4，app及图形化组件开发/维护
+> Responsibility：Angular4，app / graphical component development / maintenance
 
 * [Wasabi Warriors] Japanese Foods in Australia&Philippines
 * 138 SunGame (Angular1, React)
