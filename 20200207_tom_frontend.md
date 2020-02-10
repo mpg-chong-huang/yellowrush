@@ -44,7 +44,7 @@ Technical Sum-up
 >
 > Langages：PHP, JavaScript
 >
-> Services：API, 网站爬虫，服务器配置，域名管理
+> Services：Restful API, Website crawler, server configuration, domain management
 >
 > System：Window（Server 2003），Linux(CenterOS, AWS linux)
 
